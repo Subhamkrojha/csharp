@@ -10,7 +10,8 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            int value1, value2, result;
+
+            int value1, value2, addition, subtraction, multiplication, division;
 
             Console.WriteLine("enter first value : ");
             value1 = Convert.ToInt32(Console.ReadLine());
@@ -18,9 +19,21 @@ namespace Operators
             Console.WriteLine("enter second value : ");
             value2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Result : ");
-            result = value1 - value2;
-            Console.WriteLine(result);
+            Console.Write("addition : ");
+            addition = value1 + value2;
+            Console.WriteLine(addition);
+
+            Console.Write("Subtraction : ");
+            subtraction = value1 - value2;
+            Console.WriteLine(subtraction);
+
+            Console.Write("Multiplication : ");
+            multiplication = value1 * value2;
+            Console.WriteLine(multiplication);
+
+            Console.Write("Division : ");
+            division = value1 / value2;
+            Console.WriteLine(division);
 
             Console.WriteLine("Press any key to exit!");
             Console.ReadKey();
